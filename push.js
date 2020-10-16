@@ -12,10 +12,10 @@ webPush.setVapidDetails(
 )
 
 var pushSubscription = {
-  "endpoint": "https://updates.push.services.mozilla.com/wpush/v2/gAAAAABfgsgpxolPiaQNmzfoqeIAB4L_XffIbb9khJM6jXGjIxgeQ5Eq4r7ZVeuNGCrbYXdhuyjqkFL0100hykLCN_xauLB5RF-E_vFITd_RrsuJ7XYh4eG4pK-nMg5YN2Erl0hKSqxyyDum_sa8t5XB15eLxPwbrx_TTey1nT9vRnExkQzD3XQ",
+  "endpoint": "https://fcm.googleapis.com/fcm/send/f5INVLJhAnE:APA91bGujWc2S4_m8q2KKpgMnuJ4KOumFkdQbbnBiJk1KzXyp4au7vjyNiaEi5Oi7Ru1SY5nXF-IqLofKrhqRi1R49rfVxzPAJggNLcLdnrD79CIm1E8CarUTKvweJGGypSxsJ-_PQJO",
   "keys": {
-    "p256dh": "BBKef6ps2tg5hvmApwbHu7IVbohnsek+ygeeNpNL+nQrZln5/I9jsdEiT3l5cRSvrsEPSKnYZSx8qk1kx5JLOZs=",
-    "auth": "z7FDbV62OgNWn4Oy+3ktNA=="
+    "p256dh": "BBXduTEDl8VPFexFPUPFSbuMvH/4AZ/H4Os5zNC3Yf91OTuLNuG69xFTq2hPZhChCLYULd9RuPEwh1y/xByxkXI=",
+    "auth": "5kehrVEaSAB4f0NxkgfdvA=="
   }
 };
 
