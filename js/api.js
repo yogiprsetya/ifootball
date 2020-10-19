@@ -94,6 +94,16 @@ const renderStandingTable = (data, checkSaved) => {
   }
 }
 
+const fetchApi = url => {
+  return fetch(url, {
+      headers: {
+          'X-Auth-Token': API_KEY
+      }
+  })
+    .then(status)
+    .then(res => res.json());
+};
+
 const createCompetitions = () => {
   const url = `${BASE_URL}v2/competitions?plan=TIER_ONE`;
 
@@ -108,9 +118,7 @@ const createCompetitions = () => {
       })
   }
 
-  fetch(url, { headers: { 'X-Auth-Token': auth } })
-    .then(status)
-    .then(res => res.json())
+  fetchApi(url)
     .then(data => renderCardLiga(data))
     .catch(err => console.log(err))
 }
@@ -130,9 +138,7 @@ const createStandings = async idCompetition => {
       })
   }
 
-  fetch(url, { headers: { 'X-Auth-Token': auth } })
-    .then(status)
-    .then(res => res.json())
+  fetchApi(url)
     .then(data => renderStandingTable(data, checkSaved))
     .catch(err => console.log(err))
 }

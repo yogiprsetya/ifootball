@@ -50,7 +50,6 @@ const saveCompetition = (id, name, area) => {
 
   if (makeSure) {
     db.createCompetition({id, name, area})
-    M.toast({html: `${name} tersimpan!`, classes: 'blue rounded'});
     pushNotification(`Berhasil Favorit ${name}`)
   }
 }
@@ -61,7 +60,6 @@ const deleteSavedCompetition = (id, name) => {
   if (makeSure) {
     db.deleteCompetition(id);
 
-    M.toast({html: `Berhasil Menghapus ${name}`, classes: 'rounded'});
     pushNotification(`Berhasil Menghapus ${name}`);
     window.location.href = "/#favorit";
   }
